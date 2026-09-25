@@ -1,6 +1,6 @@
 public class Baterai {
-  int kapasitas;
-  int persen;
+  private int kapasitas;
+  private int persen;
 
   Baterai(int kapasitas) {
     this.kapasitas = kapasitas;
@@ -9,6 +9,10 @@ public class Baterai {
 
   public int getPersen() {
     return persen;
+  }
+
+  public int getKapasitas(){
+    return kapasitas;
   }
 
   public void tambah(int nilai){

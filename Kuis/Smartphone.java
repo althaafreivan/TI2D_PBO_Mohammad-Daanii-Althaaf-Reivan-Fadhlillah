@@ -1,6 +1,6 @@
 public class Smartphone {
-  String merk;
-  Baterai baterai;
+  private String merk;
+  private Baterai baterai;
 
   public Smartphone(String merk, int kapasitasBaterai) {
     this.merk = merk;
@@ -17,7 +17,7 @@ public class Smartphone {
   }
 
   public void pakai(int menit){
-    if (baterai.kapasitas>0) {
+    if (baterai.getKapasitas()>0) {
         baterai.kurangi(menit);
     }else{
       System.out.println("HP nya sudah mati.");
@@ -26,6 +26,6 @@ public class Smartphone {
   }
 
   public void tampilkanInfo(){
-      System.out.println(merk + "\t|" + "\tBaterai\t"+ baterai.kapasitas + " mAh" + "\t|\t" +baterai.getPersen() + "%");
+      System.out.println(merk + "\t|" + "\tBaterai\t"+ baterai.getKapasitas() + " mAh" + "\t|\t" +baterai.getPersen() + "%");
   }
 }

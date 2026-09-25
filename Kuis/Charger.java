@@ -1,5 +1,5 @@
 public class Charger {
-  int daya;
+  private int daya;
 
   public Charger(int daya){
     this.daya = daya;
